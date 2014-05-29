@@ -1,0 +1,277 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Amazon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/RandoPizza"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Button_main"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/supreme_pizza" />
+
+            <ImageView
+                android:id="@+id/CreaNuovaPizza"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Button_main"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/RandoPizza"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ing_pizza" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Button_main"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/CreaNuovaPizza" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50" >
+
+                    <ImageView
+                        android:id="@+id/ArchivioPizze"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@color/holo_dark_blu" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/ArchivioPizze"
+                        android:layout_alignLeft="@+id/ArchivioPizze"
+                        android:layout_alignRight="@+id/ArchivioPizze"
+                        android:layout_alignTop="@+id/ArchivioPizze"
+                        android:gravity="center"
+                        android:text="@string/archivio_pizze"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:typeface="normal" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/ArchivioPizze"
+                        android:layout_alignRight="@+id/ArchivioPizze"
+                        android:src="@drawable/ic_action_archive" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50" >
+
+                    <ImageView
+                        android:id="@+id/AggPizza"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@color/holo_dark_green" />
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/AggPizza"
+                        android:layout_alignLeft="@+id/AggPizza"
+                        android:layout_alignRight="@+id/AggPizza"
+                        android:layout_alignTop="@+id/AggPizza"
+                        android:gravity="center"
+                        android:text="@string/aggiungi_pizza"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:typeface="normal" />
+
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/AggPizza"
+                        android:layout_alignRight="@+id/AggPizza"
+                        android:src="@drawable/ic_action_add" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Button_main"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout2" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50" >
+
+                    <ImageView
+                        android:id="@+id/Archivioingredienti"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@color/holo_dark_red" />
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignRight="@+id/Archivioingredienti"
+                        android:layout_alignTop="@+id/Archivioingredienti"
+                        android:gravity="center"
+                        android:text="@string/archivio_ingredienti"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:typeface="normal" />
+
+                    <ImageView
+                        android:id="@+id/ImageView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignRight="@+id/Archivioingredienti"
+                        android:src="@drawable/ic_action_archive" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50" >
+
+                    <ImageView
+                        android:id="@+id/AggiungiIngredienti"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="1dp"
+                        android:src="@color/holo_dark_orange" />
+
+                    <TextView
+                        android:id="@+id/TextView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/AggiungiIngredienti"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignRight="@+id/AggiungiIngredienti"
+                        android:layout_alignTop="@+id/AggiungiIngredienti"
+                        android:gravity="center"
+                        android:text="@string/aggiungi_ingrediente"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:typeface="normal" />
+
+                    <ImageView
+                        android:id="@+id/ImageView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_action_add" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/no_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/RandoPizza"
+                android:layout_alignRight="@+id/RandoPizza"
+                android:layout_alignStart="@id/RandoPizza"
+                android:layout_alignTop="@+id/RandoPizza"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center|top"
+                android:text="@string/randopizza"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/RandoPizza"
+                android:layout_alignLeft="@+id/RandoPizza"
+                android:layout_alignRight="@+id/RandoPizza"
+                android:layout_below="@+id/no_image"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp" 
+                android:gravity="center"
+                android:text="@string/seleziona_una_pizza_a_caso_presente_nell_archivio"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/CreaNuovaPizza"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@id/CreaNuovaPizza"
+                android:layout_alignStart="@id/RandoPizza"
+                android:layout_alignTop="@+id/CreaNuovaPizza"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center|top"
+                android:text="@string/genera_pizza"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/CreaNuovaPizza"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignRight="@+id/TextView01"
+                android:layout_below="@+id/TextView01"
+                android:gravity="center"
+                android:text="@string/genera_una_nuova_pizza_combinando_casualmente_gli_ingredienti"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

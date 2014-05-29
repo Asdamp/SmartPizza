@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:dslv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true" xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/pizza_nome_pizza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:hint="@string/nome_pizza"
+        android:inputType="textAutoComplete"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <com.mobeta.android.dslv.DragSortListView
+            android:id="@+id/lista_ingredienti_lista"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/rvIcon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            dslv:click_remove_id="@+id/remove"
+            dslv:collapsed_height="1.0dip"
+            dslv:drag_enabled="true"
+            dslv:drag_handle_id="@+id/remove"
+            dslv:float_alpha="0.6"
+            dslv:remove_enabled="true"
+            dslv:remove_mode="clickRemove"
+            dslv:slide_shuffle_speed="0.3" />
+
+        <EditText
+            android:id="@+id/pizza_descrizione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/note_descrizione_pizza"
+            android:textAppearance="?android:attr/textAppearanceSmall" >
+
+        </EditText>
+
+        <RelativeLayout
+            android:id="@id/rvIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pizza_descrizione"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:background="@color/holo_grey" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/pizza_immagine"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/pizza_immagine"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/pizza_immagine"
+                android:layout_alignTop="@id/pizza_immagine"
+                android:layout_toRightOf="@id/pizza_immagine"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/pizza_mod_modifica_immagine"
+                    style="@style/Widget.Sherlock.ActionButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:drawableLeft="@drawable/ic_action_select_image"
+                    android:text="@string/modifica"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <View
+                    android:layout_width="140dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@android:color/darker_gray" />
+
+                <Button
+                    android:id="@+id/pizza_mod_remove_immagine"
+                    style="@style/Widget.Sherlock.ActionButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:drawableLeft="@drawable/ic_action_delete"
+                    android:text="@string/elimina"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/pizza_immagine"
+                android:layout_width="@dimen/Image_dim"
+                android:layout_height="@dimen/Image_dim"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/no_image"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/no_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/pizza_immagine"
+                android:layout_alignRight="@+id/pizza_immagine"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:alpha="0.6"
+                android:gravity="center"
+                android:text="@string/nessuna_immagine"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

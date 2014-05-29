@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.asdamp.smartpizza"
+    android:versionCode="14"
+    android:versionName="1.1.4" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+<uses-permission android:name="android.permission.INTERNET" />
+
+
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <application
+        android:name="com.asdamp.smartpizza.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:permission=""
+        
+        android:theme="@style/AppTheme" >
+        <provider
+      			android:name="com.asdamp.database.SmartPizzaContentProvider"
+     	 		android:authorities="com.asdamp.smartpizza.contentprovider"
+     	 		    android:exported="true"
+     	 		 >
+  		 </provider>
+        <activity
+            android:name="com.asdamp.smartpizza.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Pizza"
+                android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+             </activity>
+        <activity android:name=".ArchivioPizze" />
+                <activity android:name=".About" />
+        
+        <activity android:name=".ArchivioIngredienti" />
+        <activity android:name=".GeneraPizza" />
+        <activity android:name=".PizzaModifica" />
+        <activity
+            android:name="com.amazon.device.ads.AdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+    </application>
+
+   
+</manifest>

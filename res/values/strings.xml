@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Pizza</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Error">"I'm an Error"</string>
+	<string name="conferma">"Conferma"</string>
+	<string name="Annulla">Annulla</string>
+     <string name="creditsMe">"Applicazione ideata e sviluppata da: 
+ Antonio Altieri"</string>
+    <string name="AltriRingraziamenti">"Tester: 
+Circelli Fiorella
+
+Ringraziamenti speciali:
+D'andrea Federico
+
+
+Questa applicazione utilizza le librerie, ActionBarSherlock, ACRA e DragSortListView, NineOldAndroids concesse sotto licenza Apache 2.0"</string>
+    <string name="apacheLink"><a href="http://www.apache.org/licenses/LICENSE-2.0.html">Licenza Apache 2.0</a></string>
+    <string name="Contatti">"Per contattare lo sviluppatore, segnalare bug, proporre funzionalità: 
+ altieriantonio.dev@gmail.com"</string>
+    <string name="invio_della_segnalazione_di_errore_al_developer">invio della segnalazione di errore al developer.</string>
+    <string name="genera_una_nuova_pizza_combinando_casualmente_gli_ingredienti">Genera una nuova pizza combinando casualmente gli ingredienti</string>
+    <string name="genera_pizza">Genera pizza</string>
+    <string name="seleziona_una_pizza_a_caso_presente_nell_archivio">Seleziona una pizza a caso presente nell\'archivio</string>
+    <string name="randopizza">RandoPizza</string>
+    <string name="aggiungi_ingrediente">Aggiungi ingrediente</string>
+    <string name="archivio_ingredienti">Archivio ingredienti</string>
+    <string name="aggiungi_pizza">Aggiungi pizza</string>
+    <string name="archivio_pizze">Archivio pizze</string>
+    <string name="nome_pizza">Nome pizza</string>
+    <string name="note_descrizione_pizza">Note/descrizione pizza</string>
+    <string name="modifica">Modifica</string>
+    <string name="elimina">Elimina</string>
+    <string name="nessuna_immagine">Nessuna immagine</string>
+    <string name="Ingrediente_presente_in_alcune_pizze_impossibile_eliminarlo">L\'ingrediente è presente in alcune pizze. Impossibile eliminarlo</string>
+    <string name="scrivi_il_nome_dell_ingrediente_e_seleziona_la_categoria_attinente">Scrivi il nome dell\'ingrediente e seleziona la categoria attinente</string>
+    <string name="vari">Vari</string>
+    <string name="sto_mangiando_una_buonissima_pizza_con_">Sto mangiando una buonissima pizza {0} con:\n</string>
+    <string name="nessuna_pizza_presente_in_database">Nessuna pizza presente in database. Si prega di inserirne alcune,  o di ripristinare le pizze di default cancellando i dati dell\'applicazione.</string>
+    <string name="Archivio_ingredienti_vuoto">L\'archivio ingredienti è vuoto. Impossibile generare automaticamente una pizza</string>
+    <string name="pomodoro">pomodoro</string>
+    <string name="mozzarella">mozzarella</string>
+    <string name="base">Base</string>
+    <string name="seleziona_fonte">Seleziona fonte</string>
+</resources>

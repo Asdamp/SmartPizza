@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" >
+
+<RelativeLayout
+    android:layout_width="0dip"
+    android:layout_height="wrap_content"
+    android:layout_weight="100" >
+
+    <TextView
+        android:id="@+id/ingredienti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pizza"
+        android:layout_below="@id/pizza"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="3.0dip"
+        android:layout_marginTop="3.0dip"
+        android:text="@string/Error"
+        android:textSize="13.0sp" />
+
+    <TextView
+        android:id="@id/pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginTop="5.0dip"
+        android:text="@string/Error"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+   
+
+</RelativeLayout>
+
+<ImageView
+    android:id="@id/remove"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginRight="5dp"
+    android:src="@drawable/ic_action_delete" />
+
+    </LinearLayout>

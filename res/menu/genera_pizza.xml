@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/conferma"
+        android:checkable="false"
+        android:enabled="true"
+        android:showAsAction="always|withText"
+        android:title="@string/conferma"
+        android:titleCondensed="@string/conferma"
+        android:visible="true"
+        android:icon="@drawable/ic_action_accept">
+    </item>
+
+</menu>
